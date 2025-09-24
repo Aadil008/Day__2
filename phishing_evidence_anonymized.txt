@@ -1,0 +1,21 @@
+# Anonymized phishing evidence - sample excerpt
+
+From: "Trusted Org" <spoofed-sender@[suspicious-domain]>
+To: [redacted]
+Subject: Important: Verify Your Account Now
+Date: [redacted]
+
+Headers (anonymized):
+- Received: from [intermediary-server] (unknown)
+- Authentication-Results: SPF=fail; DKIM=none; DMARC=none
+
+Extracted link evidence (anonymized):
+- Visible link: https://trusted-org.example.com/verify
+- Actual target: https://redirector.example.net/track?u=malicious-page
+
+Observed indicators:
+- Sender display name vs sending domain mismatch
+- Urgent language demanding immediate verification
+- Hover reveals redirecting URL unrelated to claimed sender
+- Minor grammar and formatting issues
+- No executable attachments in this sample
